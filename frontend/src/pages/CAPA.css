@@ -1,0 +1,424 @@
+
+.capa-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 0 40px;
+  color: #e9eaf3;
+}
+
+.capa-header {
+  margin-bottom: 28px;
+}
+
+.capa-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #b49aff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.capa-header h1 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.capa-header p,
+.capa-card-heading p {
+  color: #9699ad;
+  font-size: 14px;
+  margin: 0;
+}
+
+.capa-card {
+  background: #151827;
+  border: 1px solid #292d42;
+  border-radius: 14px;
+  padding: 26px;
+  margin-bottom: 24px;
+}
+
+.capa-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #a98bff;
+  margin-bottom: 25px;
+}
+
+.capa-card-heading h2,
+.capa-results-heading h2 {
+  color: #f0eff8;
+  font-size: 18px;
+  margin: 0 0 6px;
+}
+
+.capa-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.capa-form label {
+  color: #d5d5e2;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.capa-form input {
+  width: 100%;
+  padding: 13px;
+  border-radius: 8px;
+  border: 1px solid #353950;
+  background: #0f1220;
+  color: #e9eaf3;
+  outline: none;
+}
+
+.capa-form input:focus {
+  border-color: #9a79ff;
+}
+
+.capa-generate-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 12px;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(110deg, #7955e8, #9c6cff);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.capa-generate-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.capa-error,
+.capa-success {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.capa-error {
+  background: #351d29;
+  border: 1px solid #793b49;
+  color: #ff9ba9;
+}
+
+.capa-success {
+  background: #173329;
+  border: 1px solid #286849;
+  color: #8de0b1;
+}
+
+.capa-results-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.capa-results-heading p {
+  color: #9699ad;
+  font-size: 13px;
+  margin: 0;
+}
+
+.capa-count {
+  background: #292044;
+  color: #c6adff;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.capa-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.capa-item {
+  background: #101321;
+  border: 1px solid #30354b;
+  border-radius: 11px;
+  padding: 20px;
+}
+
+.capa-item-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.capa-item-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 9px;
+  background: #292044;
+  color: #b49aff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.capa-item-title {
+  flex: 1;
+}
+
+.capa-item-title h3 {
+  color: #f0eff8;
+  font-size: 15px;
+  margin: 0 0 6px;
+}
+
+.capa-type {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 9px;
+  border-radius: 5px;
+  background: #292044;
+  color: #c6adff;
+}
+
+.capa-type.corrective {
+  background: #38271c;
+  color: #f5b66c;
+}
+
+.capa-type.preventive {
+  background: #19352d;
+  color: #83dbb0;
+}
+
+.capa-status {
+  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #30291c;
+  color: #f5c66b;
+}
+
+.capa-item-content h4 {
+  color: #b9a3ff;
+  font-size: 13px;
+  margin: 18px 0 7px;
+}
+
+.capa-item-content p {
+  color: #c5c8d9;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.capa-item-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  padding-top: 16px;
+  margin-top: 20px;
+  border-top: 1px solid #30354b;
+}
+
+.capa-item-footer span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #9699ad;
+  font-size: 12px;
+}
+
+.capa-review-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #30291c;
+  border: 1px solid #66552e;
+  border-radius: 9px;
+  padding: 15px;
+  margin-top: 24px;
+  color: #e5d2a5;
+}
+
+.capa-review-notice svg {
+  flex-shrink: 0;
+}
+
+.capa-review-notice strong {
+  font-size: 13px;
+}
+
+.capa-review-notice p {
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 6px 0 0;
+}
+
+.capa-empty {
+  text-align: center;
+  padding: 45px 20px;
+  color: #9699ad;
+}
+
+.capa-empty svg {
+  color: #9c7aff;
+}
+
+.capa-empty h3 {
+  color: #e9eaf3;
+  margin: 15px 0 8px;
+}
+
+.capa-empty p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .capa-card {
+    padding: 18px;
+  }
+
+  .capa-header h1 {
+    font-size: 23px;
+  }
+
+  .capa-results-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.capa-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.capa-edit-form label {
+  color: #c9cce0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.capa-edit-form textarea {
+  width: 100%;
+  padding: 12px;
+  color: #e9eaf3;
+  background: #111522;
+  border: 1px solid #343b50;
+  border-radius: 9px;
+  outline: none;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.capa-edit-form textarea:focus {
+  border-color: #9875ff;
+}
+
+.capa-edit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.capa-edit-button,
+.capa-save-button,
+.capa-cancel-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.capa-edit-button {
+  margin-top: 14px;
+  color: #c9b8ff;
+  background: #29213f;
+  border: 1px solid #554080;
+}
+
+.capa-save-button {
+  color: white;
+  background: #6650c8;
+  border: 1px solid #8068e8;
+}
+
+.capa-cancel-button {
+  color: #d5d7e2;
+  background: #252a38;
+  border: 1px solid #41485b;
+}
+
+.capa-edit-button:hover,
+.capa-save-button:hover,
+.capa-cancel-button:hover {
+  opacity: 0.85;
+}
+
+.capa-edit-button:disabled,
+.capa-save-button:disabled,
+.capa-cancel-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.capa-edit-form input,
+.capa-edit-form select {
+  width: 100%;
+  padding: 12px;
+  color: #e9eaf3;
+  background: #111522;
+  border: 1px solid #343b50;
+  border-radius: 9px;
+  outline: none;
+}
+
+.capa-edit-form input:focus,
+.capa-edit-form select:focus {
+  border-color: #9875ff;
+}
+
+.capa-edit-form label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 8px;
+  color: #c9cce0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.capa-edit-form select option {
+  background: #111522;
+  color: #e9eaf3;
+}

@@ -1,0 +1,399 @@
+
+.rca-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 0 40px;
+  color: #e9eaf3;
+}
+
+.rca-header {
+  margin-bottom: 28px;
+}
+
+.rca-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #b49aff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.rca-header h1 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.rca-header p,
+.rca-card-heading p {
+  color: #9699ad;
+  font-size: 14px;
+  margin: 0;
+}
+
+.rca-card {
+  background: #151827;
+  border: 1px solid #292d42;
+  border-radius: 14px;
+  padding: 26px;
+  margin-bottom: 24px;
+}
+
+.rca-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 26px;
+  color: #a98bff;
+}
+
+.rca-card-heading h2,
+.rca-result h2 {
+  color: #f0eff8;
+  font-size: 18px;
+  margin: 0 0 6px;
+}
+
+.rca-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rca-form label {
+  color: #d5d5e2;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.rca-form select {
+  width: 100%;
+  padding: 13px;
+  border-radius: 8px;
+  border: 1px solid #353950;
+  background: #0f1220;
+  color: #e9eaf3;
+  outline: none;
+}
+
+.rca-form select:focus {
+  border-color: #9a79ff;
+}
+
+.rca-methods {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.rca-methods button {
+  text-align: left;
+  padding: 18px;
+  background: #101321;
+  border: 1px solid #30354b;
+  border-radius: 10px;
+  color: #eeeafa;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.rca-methods button.selected {
+  border-color: #a184ff;
+  background: #211a3b;
+}
+
+.rca-methods button span {
+  display: block;
+  color: #999cb1;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+.rca-generate-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 16px;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(110deg, #7955e8, #9c6cff);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.rca-generate-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.rca-error {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #793b49;
+  border-radius: 9px;
+  background: #351d29;
+  color: #ff9ba9;
+  font-size: 13px;
+}
+
+.rca-result {
+  overflow: hidden;
+}
+
+.rca-report {
+  background: #0e1120;
+  border: 1px solid #2b3046;
+  border-radius: 9px;
+  padding: 18px;
+  margin-top: 18px;
+  overflow-x: auto;
+}
+
+.rca-report pre {
+  color: #d6d8e8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.rca-review-notice {
+  color: #d8c18b;
+  background: #30291c;
+  border: 1px solid #66552e;
+  border-radius: 8px;
+  padding: 13px;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 18px;
+}
+
+@media (max-width: 650px) {
+  .rca-methods {
+    grid-template-columns: 1fr;
+  }
+
+  .rca-card {
+    padding: 18px;
+  }
+
+  .rca-header h1 {
+    font-size: 23px;
+  }
+}
+
+/* RCA Result Header */
+.rca-result-heading {
+  margin-bottom: 22px;
+}
+
+.rca-result-heading h2 {
+  font-size: 21px;
+  margin: 8px 0;
+}
+
+.rca-result-heading p {
+  color: #9699ad;
+  font-size: 13px;
+}
+
+/* Analysis Metadata */
+.rca-metadata {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.rca-metadata > div {
+  background: #101321;
+  border: 1px solid #30354b;
+  border-radius: 9px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.rca-metadata span {
+  color: #9699ad;
+  font-size: 12px;
+}
+
+.rca-metadata strong {
+  color: #e9eaf3;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.rca-metadata .pending-status {
+  color: #f5c66b;
+}
+
+/* Investigation Report */
+.rca-report-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ad91ff;
+  margin: 28px 0 12px;
+}
+
+.rca-report-heading h3 {
+  color: #eeeafa;
+  font-size: 17px;
+  margin: 0;
+}
+
+.rca-review-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.rca-review-notice svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.rca-review-notice strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.rca-review-notice p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+  .rca-metadata {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 450px) {
+  .rca-metadata {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Markdown Report Formatting */
+
+.markdown-report {
+  color: #dfe1ee;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.markdown-report h1,
+.markdown-report h2,
+.markdown-report h3,
+.markdown-report h4 {
+  color: #c0a8ff;
+  margin: 24px 0 12px;
+  line-height: 1.4;
+}
+
+.markdown-report h1 {
+  font-size: 23px;
+}
+
+.markdown-report h2 {
+  font-size: 19px;
+}
+
+.markdown-report h3 {
+  font-size: 16px;
+}
+
+.markdown-report p {
+  margin: 12px 0;
+}
+
+.markdown-report strong {
+  color: #ffffff;
+}
+
+.markdown-report ul,
+.markdown-report ol {
+  padding-left: 25px;
+  margin: 12px 0;
+}
+
+.markdown-report li {
+  margin-bottom: 7px;
+}
+
+.markdown-report blockquote {
+  border-left: 3px solid #9875ff;
+  margin: 16px 0;
+  padding: 8px 15px;
+  background: #19172b;
+  color: #c6b8ed;
+}
+
+.markdown-report table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 13px;
+}
+
+.markdown-report th {
+  background: #292044;
+  color: #c6adff;
+  font-weight: 700;
+  text-align: left;
+}
+
+.markdown-report th,
+.markdown-report td {
+  border: 1px solid #353950;
+  padding: 11px;
+  vertical-align: top;
+}
+
+.markdown-report tr:nth-child(even) {
+  background: #151a2b;
+}
+
+.markdown-report hr {
+  border: none;
+  border-top: 1px solid #353950;
+  margin: 22px 0;
+}
+
+.markdown-report code {
+  background: #29223e;
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: #d4baff;
+}
+
+.markdown-report pre {
+  background: #0b0e19;
+  border: 1px solid #353950;
+  border-radius: 8px;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+.markdown-report pre code {
+  background: transparent;
+  padding: 0;
+}
